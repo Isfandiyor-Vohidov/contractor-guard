@@ -1,0 +1,27 @@
+# Локальная конфигурация Supabase CLI
+[project]
+id = "contractor-guard"
+name = "ContractorGuard"
+organization = "local"
+
+[auth]
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000/**"]
+enable_signup = true
+
+[api]
+port = 54321
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+port = 54323
+
+[storage]
+file_size_limit = "50MB"
+
+# Для локальной разработки можно добавить ключи (не боевые)
+[secrets]
+# ...
