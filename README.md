@@ -1,30 +1,47 @@
 # 🛡️ Contractor-Guard
 
-> **Secure, automated contract lifecycle management (CLM) with active performance guarding and state verification.** Built for modern enterprises and independent contractors.
+> Secure, automated contract lifecycle management с активным "guarding" и верификацией выполнения.
+
+**The Architect** — Intelligent Contract Protection System
 
 ---
 
 ## 👁️ Overview
 
-**Contractor-Guard** is a robust, full-stack platform engineered to automate, secure, and monitor contract execution. It acts as an active "guardian" between builders/service providers and clients, ensuring that milestones are verified, payments are escrowed safely, and terms are strictly adhered to without manual overhead.
+**Contractor-Guard** — это современная платформа, которая полностью автоматизирует жизненный цикл контрактов между заказчиками и исполнителями.
 
-By leveraging **Supabase Edge Functions** for background orchestration and **TypeScript** for end-to-end type safety, Contractor-Guard minimizes legal and financial risks in peer-to-peer and B2B agreements.
+Платформа выступает в роли **активного стража**: автоматически проверяет выполнение milestones, управляет escrow-платежами, следит за соблюдением условий и минимизирует юридические и финансовые риски.
+
+### Основные возможности
+
+- **Active Guarding Protocol** — интеллектуальная проверка выполнения этапов перед разблокировкой платежей
+- **Автоматический AI-анализ контрактов** (извлечение milestones, рисков и ключевых условий)
+- **Escrow & Milestone Payments** — безопасное хранение и условное освобождение средств
+- **Real-time State Machine** — прозрачное отслеживание статуса контракта в реальном времени
+- **Генерация отчётов и рекомендаций** по улучшению контракта
+- **Row-Level Security** + строгие политики доступа
+- **Serverless Edge Functions** для надёжной оркестрации
 
 ---
 
-## ⚡ Key Architecture & Features
+## ✨ Key Features
 
-* **🔒 Active Guarding Protocol:** Auto-verifies milestone completion criteria before triggering state changes or financial releases.
-* **⚡ Serverless Orchestration:** Powered by Supabase Edge Functions for secure, low-latency, and isolated logic execution.
-* **💼 Real-time State Machine:** Real-time synchronization of contract states (Draft ➔ Active ➔ Milestone Pending ➔ Guarded ➔ Completed) using Supabase Realtime.
-* **🛠️ Developer-First UX:** Sleek, high-performance dashboard designed with Tailwind CSS, focusing on speed and micro-interactions.
-* **🔑 Strict Permission Guarding:** Row-Level Security (RLS) policies in PostgreSQL ensuring that contract data is strictly isolated between authorized parties.
+- **🤖 AI-Powered Analysis** — извлечение структуры контракта, рисков и milestones с помощью LLM
+- **🔄 Smart State Transitions** — Draft → Active → Milestone Review → Guarded → Completed
+- **💰 Escrow Management** — интеграция с платежами (Stripe-ready)
+- **📄 Multi-format Support** — PDF, DOCX, TXT
+- **📊 Dashboard & Analytics** — удобный интерфейс с графиками прогресса
+- **🔒 Enterprise-grade Security** — Supabase RLS + permission guarding
+- **⚡ High Performance** — Next.js 15 App Router + Tailwind + Framer Motion
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React, Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion
-* **Backend & Database:** Supabase (PostgreSQL, Auth, RLS)
-* **Serverless Logic:** Supabase Edge Functions (Deno / TypeScript)
-* **Icons & UI Assets:** Lucide React
+- **Frontend**: Next.js 15 (App Router), React, TypeScript, Tailwind CSS, Framer Motion
+- **Backend & DB**: Supabase (PostgreSQL, Auth, Realtime, Edge Functions)
+- **AI**: AI-SDK + несколько провайдеров (OpenAI, Anthropic, Google и др.)
+- **Документы**: pdf-parse, mammoth, LangChain / custom prompts
+- **State Management**: Zustand
+- **UI**: Lucide React, Recharts
+- **Background Jobs**: Supabase Edge Functions (Deno)
